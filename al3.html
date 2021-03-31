@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>Fizetés</title>
+</head>
+<body class="al3">
+    <div class="container-sm ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><i class="fas fa-utensils"></i> </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link  btn btn-outline-primary  mx-1" href="index.html">Főoldal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-outline-primary mx-1" href="al1.html">Menü</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-outline-primary mx-1" href="al2.html">Házhozszállítás</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active btn btn-outline-primary text-light mx-1"   aria-current="page" href="al3.html">Fizetés</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-outline-primary mx-1" href="al4.html">Források</a>
+                  </li>
+                  
+                 
+                </ul>
+                <div>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Keresés..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Keresés</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </nav> 
+
+           <div class="mt-5">
+             
+              <form class="row g-3 shadowtext">
+                <div class="col-md-6">
+                  <label for="validationCustom01" class="form-label">Családnév</label>
+                  <input type="text" class="form-control" minlength="2" id="validationCustom01" placeholder="Pál..." required>
+                  <div class="valid-feedback">
+                    Hoppá! valamit kihagytál!
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom02" class="form-label">Keresztnév</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="Álmos..." required>
+                  <div class="valid-feedback">
+                    Hoppá! valamit kihagytál!
+                  </div>
+                </div>
+               
+                <div class="col-md-5">
+                  <label for="validationCustom03" class="form-label">Város</label>
+                  <input type="text" class="form-control" placeholder="Budapest..."  id="validationCustom03" required>
+                  <div class="invalid-feedback">
+                    Hoppá! valamit kihagytál!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom08" class="form-label">Megye</label>
+                  <select class="form-select" id="validationCustom08" required>
+                    <option selected disabled value="">Válasszon...</option>
+                    <option value="">Bács-Kiskun megye</option>
+                    <option value=""> Baranya megye </option>     
+                    <option value="">Békés megye </option>       
+                    <option value="">Borsod-Abaúj-Zemplén megye </option>        
+                    <option value="">Csongrád-Csanád megye </option>         
+                  <option value="">Fejér megye </option>
+                   <option value="">Győr-Moson-Sopron megye </option> 
+                   <option value="">Hajdú-Bihar megye</option> 
+                     <option value=""> Heves megye</option>   
+                         <option value=""> Jász-Nagykun-Szolnok megye</option>         
+                         <option value=""> Komárom-Esztergom megye</option>          
+                         <option value="">Nógrád megye</option>            
+                          <option value=""> Pest megye</option>           
+                          <option value=""> Somogy megye</option>            
+                           <option value=""> Szabolcs-Szatmár-Bereg megye</option>            
+                           <option value=""> Tolna megye</option>             
+                           <option value="">  Vas megye</option>            
+                            <option value=""> Veszprém megye</option>            
+                            <option value="">            Zala megye</option>
+                    
+                    
+                  </select>
+                  <div class="invalid-feedback">
+                    Hoppá! valamit kihagytál!
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom05" class="form-label">Irányitószám</label>
+                  <input type="number" class="form-control" id="validationCustom05" required>
+                  <div class="invalid-feedback">
+                    Hoppá! valamit kihagytál!
+                  </div>
+                </div>
+    
+    
+    
+                <div id="credit-card" class=" show active ">
+                  
+                      <div class="form-group"> <label for="validationCustom06" class="form-label">Kártya tulajdonos</label> <input type="text" id="validationCustom06" placeholder="Kártya tulajdonos neve" required class="form-control "> <div class="invalid-feedback">
+                        Hoppá! valamit kihagytál!
+                      </div></div>
+                      <div class="form-group"><label for="validationCustom07" class="form-label">Kártya szám</label> 
+    
+                          <div class="input-group"> <input type="text" id="validationCustom07" placeholder="Kártya szám" class="form-control " required>
+                              <div class="input-group-append"> <span class="input-group-text bg-secondary"> <i class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i> <i class="fab fa-cc-amex mx-1"></i> </span> </div>
+                          </div>
+                          <div class="invalid-feedback">
+                            Hoppá! valamit kihagytál!
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-8">
+                              <div class="form-group"> <label for="validationCustom09" class="form-label">Érvényességi idő</label>
+                                  <div class="input-group"> <input id="validationCustom09" type="number" placeholder="Hó" min="0" max="12" name="month" class="form-control" required> <input type="number" placeholder="Év" min="0" name="year" class="form-control" required> </div>
+                              </div>
+                              <div class="invalid-feedback">
+                                Hoppá! valamit kihagytál!
+                              </div>
+                          </div>
+                          <div class="col-sm-4">
+                              <div class="form-group mb-4"> <label for="validationCustom10" class="mb-2" data-toggle="tooltip" title="Három Szám">
+                                      CVV <i class="fa fa-question-circle d-inline "></i> 
+                                  </label> <input id="validationCustom10" placeholder="911..." type="text"  required class="form-control"> </div>
+                                  <div class="invalid-feedback">
+                                    Hoppá! valamit kihagytál!
+                                  </div>
+                          </div>
+                          
+                        </div>
+                    
+                        
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    <span class="family">Elolvastam és elfogadom a feltételeket!</span> 
+                  </label>
+                  <div class="invalid-feedback">
+                    Hoppá! valamit kihagytál!
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 " >
+                <button class="btn btn-success" type="submit">Fizetés</button>
+              </div>
+              <p><i class="shadowtext">Fizetés után reklamációt nem fogadunk el!</i> <br> 
+                <i><b>Figyelem!</b> A Weboldal és annak tartalma nem valós! Minden egybeesés csak a véletlen szüleménye! </i> </p>
+            </form>
+          
+          </div>
+                
+          
+       
+       
+                       
+                        
+                           
+                           
+              
+          <footer class="d-flex justify-content-between shadowtext  px-2 py-2">Álmos Pál <span>2021. 03.31.</span></footer>     
+        </div>
+    
+</body>
+</html>
